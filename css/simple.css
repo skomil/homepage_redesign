@@ -14,7 +14,7 @@
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  box-shadow: 0 0 3px rgba(0,0,0,0.3);  
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
   text-decoration: none;
   display: inline-block;
   font-weight: 400;
@@ -44,5 +44,5 @@
   color: #FFF;
   line-height: 140%;
   margin-bottom: 40px;
-  text-align: center;  
+  text-align: center;
 }

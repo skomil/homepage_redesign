@@ -428,16 +428,6 @@ h1#page_title {
   padding: 1px;
 }
 
-#embed hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
-}
-
 #about .subpage-content img {
   float:left;
   width:150px;
@@ -462,11 +452,11 @@ h1#page_title {
    line-height: 1.61em;
 }
 
-.subpage-content h1, 
-.subpage-content h2, 
-.subpage-content h3, 
-.subpage-content h4, 
-.subpage-content h5, 
+.subpage-content h1,
+.subpage-content h2,
+.subpage-content h3,
+.subpage-content h4,
+.subpage-content h5,
 .subpage-content h6{
   padding: 1em 0 .5em;
   margin: 0;
@@ -534,11 +524,11 @@ display:inline;
   padding-top: 30px;
 }
 
-.sidebar h1, 
-.sidebar h2, 
-.sidebar h3, 
-.sidebar h4, 
-.sidebar h5, 
+.sidebar h1,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
 .sidebar h6{
   text-align: center;
   padding-bottom: 10px;
@@ -737,7 +727,7 @@ input.error{
   text-align: center;
   text-transform: uppercase;
   color: #888;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 #pledgecol-sidebar .panel .panel-body h6 {
@@ -760,8 +750,8 @@ input.error{
   font-size: 30px;
   font-weight: 700;
   background: #d2393c;
-  color: #fff;  
-  transition: background 0.15s;  
+  color: #fff;
+  transition: background 0.15s;
 }
 
 #pledgecol-sidebar form button:hover {
@@ -789,12 +779,12 @@ input.error{
   margin-top: 20px;
   font-size: 60px;
   font-weight: 700;
-  border-radius: 2px;  
+  border-radius: 2px;
 }
 
 .videoEmbed {
-  max-width:640px; 
-  max-height:360px; 
+  max-width:640px;
+  max-height:360px;
 }
 
 #goodfightHeader {
@@ -816,7 +806,7 @@ input.error{
 }
 
 #goodfightEmbed iframe {
-  border: none; 
+  border: none;
   height:250px;
   margin:0 0;
   width:100%;
