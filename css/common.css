@@ -51,14 +51,24 @@ body {
   top: 26px;
   width: 100%;
 }
+  .navbar-primary .navbar-nav{
+    padding-left:10px;
+  }
+  .navbar-primary .navbar-nav>li:after{content:""; background: black; position: absolute; bottom: 14px; right: 0; height: 16px; width: 1px;}
+  .navbar-primary .navbar-nav>li:last-child:after{width:0px}
+
   .navbar-primary .navbar-nav>li>a {
-    padding: 13px 15px;
+    padding: 13px 20px;
     text-transform: uppercase;
     color: #444;
     font-weight: 400;
     letter-spacing:90%;
     height: 45px;
   }
+  .navbar-primary .navbar-nav .fa.fa-caret-down{
+    padding-left:5px;
+  }
+
   .navbar-toggle .menu-text {
     text-transform: uppercase;
     color: #444;
@@ -191,14 +201,6 @@ footer {
   width: 100%;
   background: transparent url('/images/bg-crossstitch.jpg');
   padding-bottom: 60px
-}
-
-
-/* Darius CSS */
-.fa.fa-caret-down {
-  padding-right:20px;
-  padding-left:10px;
-  border-right:solid 1px #000;
 }
 
 /* COLLAPSE THE MENU EARLY */
