@@ -15,7 +15,7 @@ og_description: You and I both know that as long as our representatives are held
 
 Labor Day is a celebration of workers, unifying in the spirit of brotherhood and equality to bring prosperity to our Democracy. Before you head out of town for this final summer weekend or prepare for the festive barbecue with your family and friends, please take a moment to watch our new video that seeks to win back that same Democracy from the cronies who hold it hostage.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/wmBGfmN6uEA" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="//www.youtube.com/embed/wmBGfmN6uEA" frameborder="0" allowfullscreen></iframe>
 
 Our goal has never been an easy one. Most thought we would not raise the first $1M. And many more told us we would not raise the second $5M. Our victory on Tuesday with Ruben Gallego’s win for reform energized me, and I hope it had the same effect on you. But if we truly want to be successful in this difficult task of fundamentally changing the way elections are funded in America, it’s going to take more than just you and me – it is going to take a movement.
 
