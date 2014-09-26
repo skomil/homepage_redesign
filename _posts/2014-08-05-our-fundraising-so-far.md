@@ -6,6 +6,9 @@ author: Lessig
 comments: true
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259998165/](http://blog.mayday.us/post/98259998165/)
+
+
 ### Our Fundraising So Far
 
 On May 1, we launched a two stage funding campaign to raise the money the Mayday PAC would need for the 2014 election cycle. (You can read [our plan here](https://mayday.us/the-plan/)). Each stage had two steps: first, a contingent funding campaign, similar to [Kickstarter](https://www.kickstarter.com/), in which pledges would be collected only if the target was met; second, a match, by one or more donors, in the amount of the target met.

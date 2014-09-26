@@ -6,6 +6,9 @@ author: Lessig
 comments: true
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259991065/](http://blog.mayday.us/post/98259991065/)
+
+
 ### Will you support the most important anti-corruption candidate in America today?
 
 Friend,

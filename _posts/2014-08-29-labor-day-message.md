@@ -13,6 +13,9 @@ og_title: A Labor Day Message from MAYDAY.US
 og_description: You and I both know that as long as our representatives are held hostage to their funders — and their funders are not all of us — our system will not work. But nothing important is easy. And nothing could be as important as this.
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260003805/](http://blog.mayday.us/post/98260003805/)
+
+
 Labor Day is a celebration of workers, unifying in the spirit of brotherhood and equality to bring prosperity to our Democracy. Before you head out of town for this final summer weekend or prepare for the festive barbecue with your family and friends, please take a moment to watch our new video that seeks to win back that same Democracy from the cronies who hold it hostage.
 
 <iframe width="100%" height="315" src="//www.youtube.com/embed/wmBGfmN6uEA" frameborder="0" allowfullscreen></iframe>

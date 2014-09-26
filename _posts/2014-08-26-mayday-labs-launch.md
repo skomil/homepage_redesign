@@ -10,6 +10,9 @@ blurb: MAYDAY.US has broken new ground in online organizing.  To build on this m
 imageURL: /images/blog/labCubes.jpg
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260002390/](http://blog.mayday.us/post/98260002390/)
+
+
 ### Launch of Mayday Labs
 
 In under four months, [MAYDAY.US](https://mayday.us) has broken new ground in online organizing around the issue of political corruption.  To build on this momentum, we are announcing the creation of Mayday Labs.

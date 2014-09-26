@@ -6,6 +6,8 @@ author: Lawrence Lessig
 comments: false
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259992635/](http://blog.mayday.us/post/98259992635/)
+
 Yesterday, MAYDAY directors and advisers met to discuss district targets for our 2014 campaigns. Our goal is simple: to send a message that we intend to fundamentally change politics for good. But before we make our final decisions, we want to hear from you.
 
 **[Tell us where we should target in 2014.](/suggest-a-candidate)**

@@ -6,11 +6,13 @@ author: Lessig (via lessig.tumblr.com)
 comments: true
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259988480/](http://blog.mayday.us/post/98259988480/)
+
 [Original post](http://lessig.tumblr.com/post/90944951837/whats-next)
 
-Ok, I slept. A lot. For the first time, forever. 
+Ok, I slept. A lot. For the first time, forever.
 
-### Overflowing my inbox is a single question: What’s next? 
+### Overflowing my inbox is a single question: What’s next?
 
 Next is selecting the candidates. We’ve been looking at this for months, but there is tons to think through before we make the choice.
 
@@ -22,6 +24,6 @@ Q1: Is the candidate *credibly* on the right side of reform.to?
 
 > If not, then it is not possible that they’ll be someone we’re trying to elect.
 
-There’s little fudging in the “credibly” qualification: the commitment one way or the other has to be believable. But beyond that, this is a pretty good first step to understanding the universe of possible targets and support. 
+There’s little fudging in the “credibly” qualification: the commitment one way or the other has to be believable. But beyond that, this is a pretty good first step to understanding the universe of possible targets and support.
 
-In other news, today begins some time away with my family. Can’t wait. 
+In other news, today begins some time away with my family. Can’t wait.

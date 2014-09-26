@@ -6,6 +6,9 @@ author: Team MAYDAY
 comments: false
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259993345/](http://blog.mayday.us/post/98259993345/)
+
+
 Our team wanted to send you a quick update on the timing of our announcement of the district campaigns for 2014.
 
 Last week, we posted the targeting criteria for our 2014 electoral campaigns, and we asked you for feedback about where MAYDAY should go. You answered with a tremendous number of suggestions, and we're going to need just a little more time to organize and consider them before the board arrives at its final decision.

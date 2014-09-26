@@ -7,4 +7,6 @@ comments: true
 youtubeid: J3x3125qAEw
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259989195/](http://blog.mayday.us/post/98259989195/)
+
 {% include youtube-embed.html %}

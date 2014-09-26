@@ -7,7 +7,10 @@ comments: true
 youtubeid: eAIMRIW-1mY
 ---
 
-Check out the latest Call Time with Lawrence Lessig, this one moderated by Ben Wikler of ["The Good Fight"](http://thegoodfight.fm/) podcast. 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259990125/](http://blog.mayday.us/post/98259990125/)
+
+
+Check out the latest Call Time with Lawrence Lessig, this one moderated by Ben Wikler of ["The Good Fight"](http://thegoodfight.fm/) podcast.
 
 {% include youtube-embed.html %}
 

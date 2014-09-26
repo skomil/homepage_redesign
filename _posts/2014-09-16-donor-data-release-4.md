@@ -12,6 +12,9 @@ blurb: Our crowd-funding effort raised over $7M from more than 60K citizens acro
 pageURL: /your-donations
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260008690/](http://blog.mayday.us/post/98260008690/)
+
+
 ### Two more weeks of data
 
 It’s that time again: our bi-weekly Mayday data release! Highlighted changes from Data Release #4:

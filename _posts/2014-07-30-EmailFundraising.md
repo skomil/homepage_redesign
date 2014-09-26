@@ -6,6 +6,9 @@ author: Lawrence Lessig
 comments: true
 ---
 
+
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259997085/](http://blog.mayday.us/post/98259997085/)
+
 There are a lot of decisions that we have made that we've gotten push-back (to put it politely) on. But the push-back that's surprised me most has been about fundraising. As I wrote just after we crossed the $5M mark, we were shifting into campaign mode. The fundraising was finished.
 
 "Why," a friend asked. "You've gathered the most committed citizens in America on this issue. Why not at least ask them for the help you'll need?"

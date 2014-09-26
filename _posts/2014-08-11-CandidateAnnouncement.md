@@ -12,6 +12,7 @@ frontpageTitle: Meet the MAYDAY.US candidates
 blurb: We announced five of our eight candidates for reform. We're supporting a diverse range of candidates in a range of important races.
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259998960/](http://blog.mayday.us/post/98259998960/)
 
 # Campaign Will Now Target Eight Total Races, Including Three Candidates Announced Today. First Radio Ads to Air in New Hampshire.
 
@@ -34,6 +35,8 @@ Today Mayday PAC also announces the placement of its first radio ads in New Hamp
 <a name="factsheet"></a>
 
 # FACT SHEET ON MAYDAY PAC 2014 TARGETS
+
+> For the latest data, please visit the main factsheet at: [https://mayday.us/factsheet](/factsheet)
 
 ###Which Candidates Will Fight Back Against Big Money in Politics?
 

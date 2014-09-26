@@ -8,7 +8,7 @@ draft: false
 frontpage: false
 ---
 
-
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260006075](http://blog.mayday.us/post/98260006075/)
 
 As I write this, the Associated Press has just called the NH GOP Senate Primary for Scott Brown, with 24% of precincts reporting and 49% of the vote.
 

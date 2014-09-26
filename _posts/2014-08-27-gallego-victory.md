@@ -13,6 +13,9 @@ og_title: We Did It!
 og_description: Our first Mayday reform candidate, Ruben Gallego, declared victory last night in Arizona's 7th Congressional District.
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260003100/](http://blog.mayday.us/post/98260003100/)
+
+
 ### We did it.
 
 Our first Mayday reform candidate, Ruben Gallego, declared victory last night in Arizona's 7th Congressional District. Last night's win shows that voters care about this issue, no matter what the pundits and people in Washington want to say.

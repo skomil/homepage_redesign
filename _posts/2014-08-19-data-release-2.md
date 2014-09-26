@@ -11,6 +11,9 @@ blurb: Our crowd-funding effort raised over $6M from more than 50K citizens acro
 pageURL: /your-donations
 ---
 
+> Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260000525/](http://blog.mayday.us/post/98260000525/)
+
+
 ### Two more weeks of data
 
 Today, in our commitment to transparency, we are releasing the second installment of our donation data. This new data file contains all donor data from the beginning of our campaign in May through August 14, 2014. Click here to check out the [full data release](http://mayday.us/your-donations/).
