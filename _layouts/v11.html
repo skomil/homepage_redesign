@@ -45,25 +45,40 @@
           <div class="col-md-4"><h3><a href="" title="Latest Mayday PAC News">MAYDAY.US News</a></h3></div>
           <div class="col-md-4"><hr/></div>
         </div>
-        {% assign counter = '.' %}
-        {% for post in site.posts limit:10 %}
-          {% unless post.draft %}
-            {% if post.frontpage and counter.size <= 3 %}
-              {% capture counter %}{{ counter | append:'.' }}{% endcapture %}
-              <article class="col-md-4">
-                <div>
-                  <h5 class="blog-image ir" style="background-image:url('{{ post.imageURL }}');">Heading</h5>
-                  <div class="article-details">
-                    <h5>{{ post.pubdate }}</h5>
-                    <h4>{% if post.frontpageTitle %}{{ post.frontpageTitle }}{% else %}{{ post.title }}{% endif %}</h4>
-                    <p> {{ post.blurb }}&nbsp;&nbsp;<a href="{{ post.url }}" title="Read More.">Read More</a></p>
-                    <p><a class="btn btn-cta" href="{% if post.pageURL %}{{ post.pageURL }} {% else %}{{ post.url }}{% endif %}" role="button">View details</a></p>
-                  </div>
-                </div>
-              </article>
-             {% endif %}
-           {% endunless %}
-        {% endfor %}
+        <!-- Doing the following manually until have time to write JS -->
+        <article class="col-md-4">
+          <div>
+            <h5 class="blog-image ir" style="background-image:url('/images/blog/2014-09-01-labor-day.jpg');">Heading</h5>
+            <div class="article-details">
+              <h5>2014-08-29</h5>
+              <h4>Labor Day</h4>
+              <p> Together, we have the power to fix this broken system and win our Democracy back ... nothing important is easy. And nothing could be as important as this.&nbsp;&nbsp;<a href="http://blog.mayday.us/post/98260003805/" title="Read More.">Read More</a></p>
+              <p><a class="btn btn-cta" href="http://blog.mayday.us/post/98260003805/" role="button">Watch Video</a></p>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4">
+          <div>
+            <h5 class="blog-image ir" style="background-image:url('/images/gallegoVictory.jpg');">Heading</h5>
+            <div class="article-details">
+              <h5>2014-08-27</h5>
+              <h4>Gallego Victory</h4>
+              <p> Our first Mayday reform candidate, Ruben Gallego, declared victory last night in Arizona's 7th Congressional District.&nbsp;&nbsp;<a href="http://blog.mayday.us/post/98260003100/" title="Read More.">Read More</a></p>
+              <p><a class="btn btn-cta" href="http://blog.mayday.us/post/98260003100/" role="button">View details</a></p>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4">
+          <div>
+            <h5 class="blog-image ir" style="background-image:url('/images/blog/labCubes.jpg');">Heading</h5>
+            <div class="article-details">
+              <h5>2014-08-26</h5>
+              <h4>Launch of Mayday Labs</h4>
+              <p> MAYDAY.US has broken new ground in online organizing.  To build on this momentum, we are announcing the creation of Mayday Labs.&nbsp;&nbsp;<a href="http://blog.mayday.us/post/98260002390/" title="Read More.">Read More</a></p>
+              <p><a class="btn btn-cta" href="http://blog.mayday.us/post/98260002390/" role="button">View details</a></p>
+            </div>
+          </div>
+        </article>
       <hr />
     </div> <!-- /container -->
   </section>
