@@ -3,6 +3,7 @@ layout: post
 title: Our 2014 Targeting Criteria
 pubdate: 2014-07-16
 author: Lawrence Lessig
+og_url: http://blog.mayday.us/post/98259992635/
 comments: false
 ---
 

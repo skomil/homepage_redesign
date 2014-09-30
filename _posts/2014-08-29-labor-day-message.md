@@ -11,6 +11,7 @@ imageURL: /images/blog/2014-09-01-labor-day.jpg
 og_image: /images/blog/2014-09-01-labor-day.jpg
 og_title: A Labor Day Message from MAYDAY.US
 og_description: You and I both know that as long as our representatives are held hostage to their funders — and their funders are not all of us — our system will not work. But nothing important is easy. And nothing could be as important as this.
+og_url: http://blog.mayday.us/post/98260003805/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260003805/](http://blog.mayday.us/post/98260003805/)

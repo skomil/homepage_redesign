@@ -4,6 +4,7 @@ title: VIDEO - Call Time, July 10th, with Lawrence Lessig and Ben Wikler
 pubdate: 2014-07-11
 author: Lessig & Ben Wikler
 comments: true
+og_url: http://blog.mayday.us/post/98259990125/
 youtubeid: eAIMRIW-1mY
 ---
 

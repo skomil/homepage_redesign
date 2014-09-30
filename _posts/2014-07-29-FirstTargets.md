@@ -5,6 +5,7 @@ pubdate: 2014-07-29
 author: Johnathan Lipman
 comments: False
 frontpage: false
+og_url: http://blog.mayday.us/post/98259995655/
 imageURL: /images/blog/2014-07-29-FirstTargets.jpg
 ---
 

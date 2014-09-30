@@ -6,6 +6,7 @@ author: Guest Post, Brian Boyko
 comments: true
 draft: false
 frontpage: false
+og_url: http://blog.mayday.us/post/98260006075/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260006075](http://blog.mayday.us/post/98260006075/)

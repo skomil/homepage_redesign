@@ -3,6 +3,7 @@ layout: post
 title: What's Next
 pubdate: 2014-07-06
 author: Lessig (via lessig.tumblr.com)
+og_url: http://blog.mayday.us/post/98259988480/
 comments: true
 ---
 

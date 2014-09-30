@@ -10,6 +10,7 @@ imageURL: /images/blog/2014-08-05-our-fundraising-so-far.jpg
 frontpageTitle: Over 50,000 donors
 blurb: Our crowd-funding effort raised over $7M from more than 60K citizens across the country. Curious about the data breakdown? Check out the details.
 pageURL: /your-donations
+og_url: http://blog.mayday.us/post/98260008690/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260008690/](http://blog.mayday.us/post/98260008690/)

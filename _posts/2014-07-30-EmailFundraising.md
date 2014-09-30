@@ -3,6 +3,7 @@ layout: post
 title: Email Fundraising
 pubdate: 2014-07-30
 author: Lawrence Lessig
+og_url: http://blog.mayday.us/post/98259997085/
 comments: true
 ---
 

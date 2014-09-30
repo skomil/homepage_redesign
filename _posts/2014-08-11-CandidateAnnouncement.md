@@ -9,6 +9,7 @@ comments: true
 frontpage: true
 imageURL: /images/blog/2014-08-11-CandidateAnnouncement.jpg
 frontpageTitle: Meet the MAYDAY.US candidates
+og_url: http://blog.mayday.us/post/98259998960/
 blurb: We announced five of our eight candidates for reform. We're supporting a diverse range of candidates in a range of important races.
 ---
 

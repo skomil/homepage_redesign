@@ -4,6 +4,7 @@ title: Update on timing for announcement
 pubdate: 2014-07-20
 author: Team MAYDAY
 comments: false
+og_url: http://blog.mayday.us/post/98259993345/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259993345/](http://blog.mayday.us/post/98259993345/)

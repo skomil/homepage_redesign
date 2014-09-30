@@ -8,6 +8,7 @@ comments: true
 frontpage: true
 blurb: MAYDAY.US has broken new ground in online organizing.  To build on this momentum, we are announcing the creation of Mayday Labs.
 imageURL: /images/blog/labCubes.jpg
+og_url: http://blog.mayday.us/post/98260002390/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260002390/](http://blog.mayday.us/post/98260002390/)

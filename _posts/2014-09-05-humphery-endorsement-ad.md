@@ -11,6 +11,7 @@ imageURL: /images/blog/2014-09-05-humphery-endorsement-ad.jpg
 og_image: /images/blog/2014-09-05-humphery-endorsement-ad.jpg
 og_title: Mayday.US Releases Senator Gordon Humphrey Endorsement Ad
 og_description: Today, Mayday.US released ads by former New Hampshire Senator Gordon Humphrey, a Republican who served two terms in the United States Senate, endorsing Jim Rubens in the Republican Primary for Senate. “I’ve known Jim Rubens for decades,” the former Senator says on the ad, “he’s real &ndash; a reformer who wants to clean up corruption in Washington.”
+og_url: http://blog.mayday.us/post/98260004575/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260004575/](http://blog.mayday.us/post/98260004575/)

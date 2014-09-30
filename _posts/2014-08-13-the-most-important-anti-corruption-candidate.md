@@ -4,6 +4,7 @@ title: The most important anti-corruption candidate in America
 pubdate: 2014-08-13
 author: Lessig
 comments: true
+og_url: http://blog.mayday.us/post/98259991065/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259991065/](http://blog.mayday.us/post/98259991065/)

@@ -3,6 +3,7 @@ layout: post
 title: Our Fundraising So Far
 pubdate: 2014-08-05
 author: Lessig
+og_url: http://blog.mayday.us/post/98259998165/
 comments: true
 ---
 

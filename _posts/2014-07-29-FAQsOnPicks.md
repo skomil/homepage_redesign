@@ -4,6 +4,7 @@ title: FAQ on our first two picks.
 pubdate: 2014-07-29
 author: Team MAYDAY
 comments: true
+og_url: http://blog.mayday.us/post/98259994875/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98259994875/](http://blog.mayday.us/post/98259994875/)

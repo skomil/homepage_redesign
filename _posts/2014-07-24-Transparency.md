@@ -3,6 +3,7 @@ layout: post
 title: Transparency
 pubdate: 2014-07-24
 author: Lessig
+og_url: http://blog.mayday.us/post/98259994120/
 comments: false
 ---
 

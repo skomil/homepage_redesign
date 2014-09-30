@@ -4,6 +4,7 @@ title: Lessig's Letter to Everyone
 pubdate: 2014-07-04
 author: Lessig
 comments: true
+og_url: http://blog.mayday.us/post/97831649695/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/97831649695/](http://blog.mayday.us/post/97831649695/)

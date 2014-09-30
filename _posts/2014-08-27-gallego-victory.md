@@ -11,6 +11,7 @@ imageURL: /images/gallegoVictory.jpg
 og_image: https://mayday.us/images/gallegoVictory.jpg
 og_title: We Did It!
 og_description: Our first Mayday reform candidate, Ruben Gallego, declared victory last night in Arizona's 7th Congressional District.
+og_url: http://blog.mayday.us/post/98260003100/
 ---
 
 > Our blog is migrating.  This blog post will now live here: [http://blog.mayday.us/post/98260003100/](http://blog.mayday.us/post/98260003100/)
