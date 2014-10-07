@@ -66,7 +66,7 @@ body {
     height: 45px;
   }
 
-    .btn.ribbon, .jumbotron .btn {
+    .jumbotron .btn {
       background-color: #cc3333;
       border: 0;
       border-radius: 0;
@@ -79,7 +79,7 @@ body {
       text-transform: uppercase;
       box-shadow: 0 0 3px rgba(0,0,0,0.3)
     }
-    .btn.ribbon:before, .btn.ribbon:after, .jumbotron .btn:after{
+    .jumbotron .btn:after{
       content: "";
       position: absolute;
       top: 5px; /* move it down because of rounded corners */
@@ -96,11 +96,9 @@ body {
       -ms-transform: rotate(45deg);
       right: -11px;
       z-index: 1;
-    }
-
-    .jumbotron .btn:after{
       background-color:inherit;
     }
+
     .btn.ribbon:before {
       left: -11px;
       z-index: 1;
@@ -112,6 +110,11 @@ body {
       font-weight: 700;
       margin-top: 5px;
       margin-right: 20px;
+      text-transform: uppercase;
+      background: transparent url(/images/donate-button.png) 0 0 no-repeat;/*142x33*/
+    }
+    .btn.ribbon:hover{
+      text-shadow: 0 0 3px rgba(0,0,0,0.8);
     }
 
   .navbar-primary .navbar-nav .fa.fa-caret-down{
