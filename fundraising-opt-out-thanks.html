@@ -1,0 +1,81 @@
+---
+layout: default
+title: MAYDAY.US - MAYDAY.US #MAYDAYin30 Video Contest
+omit_title_suffix: true
+cssid: camp-fundraising-opt-out
+hideSidebar: true
+og_title: Thank you!
+og_description: Thank you!
+
+---
+{% capture subhead %} A citizen-funded super PAC, to end all super PACs. {% endcapture %}
+ {% capture pageid %} camp-vid-contest2040918 {% endcapture %}
+
+{% capture content %}
+
+<h2>Glad to have you with us!</h2>
+
+<p>One of the most important things you can do to help MAYDAY is to stay engaged to help us support candidates commited to fundamental reforming the election process. If you don't want to receive fundraising emails, please fill out the form below and we'll opt you out of future requests.</p>
+
+<p id="thank-you-language" style="display:none;">Got it. We won't bother you with fundraishing emails again.  Thanks!</p>
+
+  <form name="subscribeForm" id="subscribeForm" action='https://pledge.mayday.us/r/subscribe' onsubmit='return validateForm();' method='post' style="min-height:400px; max-width:500px;margin:0 auto">
+      <input name="MERGE13" type="hidden" value="NO" />
+      <input name="redirect" type="hidden" value="https://mayday.us/thanks_dna/" />
+
+        <div class="row">
+            <label>Email (required)</label>
+            <input id='email_input' type="email" required name="email" class="form-control">
+          </div>
+        </div>
+
+        <div class="row">
+           <span class="input-group-btn">
+              <button id="submitButton" type="submit" class="btn">Sorry! I can't donate.</button>
+            </span>
+        </div>
+
+        <div class="row">
+          <div id="spinButton" class="spacing" style="position:relative;"></div>
+        </div>
+
+      </form>
+<style type="text/css" media="screen">
+    #submitButton{
+        border-radius:4px;
+        background:#cc3333;
+        color:#fff;
+        font-family: roboto, sans;
+        font-weight:700;
+        font-size:18px;
+        margin-top:20px;
+    }
+</style>
+<script type="text/javascript" charset="utf-8" async defer>
+  $(document).ready(function(){
+    $('#subscribeForm').validate({
+      rules: {
+        email: {required: true, email: true }
+      },
+      submitHandler: function(form) {
+        $(form).find('#submitButton').text('Loading...')
+        form.submit()
+        setTimeout(function () {
+           form.hide()
+           $('#thank-you-language').show()
+        }, 1000); //delay redirect to ensure form submission is good, since we can't test the ifame.
+      }
+    });
+    var storedData = $.cookie();
+    if(typeof storedData.userZip != 'undefined' && storedData.userZip != ''){
+      $('#zip').val(storedData.userZip);
+    }
+    if(typeof storedData.userEmail != 'undefined' && storedData.userEmail != ''){
+      $('#email').val(storedData.userEmail);
+    }
+  });
+</script>
+<!-- form is submited through invisible iframe to skirt around cross-domain issues. 
+<iframe src="about:blank" name="offsite-iframe" style="display:none"></iframe> -->
+{% endcapture %}
+{% include subpage.html %}
