@@ -269,15 +269,8 @@ input.error{border: 1px solid #d53a38;background: rgba(213,58,56,0.1);}
 
 /*EEEEEEEEEEEEND SYTLE.CSS*/
 
-
-
 /* v9green
 ======================================================================== */
-/*button,
-input,
-select,
-textarea {color: #000;}*/
-
 a {color: #15405e;outline: none !important;}
 a:hover {text-decoration: none;}
 p {font-size: 18px;margin: 0 0 1.2em;}
