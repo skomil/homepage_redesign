@@ -319,7 +319,7 @@ $(document).ready(function() {
       };
 	stripeHandler = StripeCheckout.configure(stripeConfig);
 	}*/
-  $.get(PLEDGE_URL + '/r/payment_config', {}, function(){}, "json").done(function(pConf) {    
+  $.post("https://pledgedev.mayday.us" + '/r/payment_config', {}, function(){}, "json").done(function(pConf) {    
       paymentConfig = pConf;
       stripeConfig = {
         key: paymentConfig.stripePublicKey,
@@ -332,5 +332,8 @@ $(document).ready(function() {
         }
       };
     stripeHandler = StripeCheckout.configure(stripeConfig);
-  });
+  }).fail(function(jqXHR, textStatus, errorThrown) {
+	alert(textStatus);
+	alert(errorThrown);
+	});
 });
