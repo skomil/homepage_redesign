@@ -301,7 +301,7 @@ $(document).ready(function() {
   
   $('#bitcoinButton').on('click', bitcoinPledge);
   
-  //$.get(PLEDGE_URL + '/r/payment_config', {}, , "jsonp");
+  /*$.get(PLEDGE_URL + '/r/payment_config', {}, , "jsonp");
 	$.ajax({url: PLEDGE_URL + '/r/payment_config?jsoncallback=initializeStripeHandler',
 			dataType: "jsonp",
 			})
@@ -318,9 +318,8 @@ $(document).ready(function() {
         }
       };
 	stripeHandler = StripeCheckout.configure(stripeConfig);
-	}
-/*  $.get(PLEDGE_URL + '/r/payment_config', {}, function(){}, "json")
-  .done(function(pConf) {    
+	}*/
+  $.get(PLEDGE_URL + '/r/payment_config', {}, function(){}, "json").done(function(pConf) {    
       paymentConfig = pConf;
       stripeConfig = {
         key: paymentConfig.stripePublicKey,
@@ -334,5 +333,4 @@ $(document).ready(function() {
       };
     stripeHandler = StripeCheckout.configure(stripeConfig);
   });
-  */
 });
