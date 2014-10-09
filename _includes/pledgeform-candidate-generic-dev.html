@@ -1,7 +1,7 @@
 <script src="//fgnass.github.io/spin.js/spin.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
 <script src="https://checkout.stripe.com/checkout.js"></script>
-<script src="https:{% if page.pledge_url %}{{ page.pledge_url }}{% else %}//pledge.mayday.us{% endif %}/static/pledge.js"></script>
+<script src="/js/pledge.js?1"></script>
 {% if page.disable-pledge-sidebar == null %}
 <link rel="stylesheet" href="{{ site.baseurl }}/css/landing-newpledge.css?3" />
 {% else %}
@@ -96,10 +96,10 @@ limitations under the License.
 
 	<div class="step-1-container">
     <!--[if IE 8]>
-    <div class="form-group col-sm-12">It looks like you're using an older IE browser! <a href="http://browsehappy.com/">Please follow this link to upgrade and make a donation!</a></div>
+    <div class="form-group col-sm-12">It looks like you're using an older IE browser! <a href="http://browsehappy.com/">Please try upgrading to make a donation!</a></div>
     <![endif]-->
     <!--[if IE 9]>
-    <div class="form-group col-sm-12">It looks like you're using an older IE browser! <a href="http://browsehappy.com/">Please follow this link to upgrade and make a donation!</a></div>
+    <div class="form-group col-sm-12">It looks like you're using an older IE browser! <a href="http://browsehappy.com/">Please try upgrading to make a donation!</a></div>
     <![endif]-->
 		<div class="ammount-button" onclick="step2(10);">$10</div>
 		<div class="ammount-button" onclick="step2(25);">$25</div>
@@ -122,9 +122,12 @@ limitations under the License.
 	</div>
 
 	<div class="step-2-container">
+   
 		  <form id="pledgeForm" role="form" method="POST" onsubmit="step3();" action="javascript:;">
           <input type="hidden" name="targeting_input" id="targeting_input" value="Whatever Helps">
           <input type="hidden" name="target" id="target" value="Whatever Helps">
+          
+            
 {% if page.only-bitcoin %}
           <div class="form-group col-sm-6"><label class="control-label">First Name</label><input type="text" required placeholder="Tommy" class="form-control input-lg" id="first_name_input" /></div>
           <div class="form-group col-sm-6"><label class="control-label">Last Name</label><input type="text" required placeholder="Brown" class="form-control input-lg" id="last_name_input" /></div>
