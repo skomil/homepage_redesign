@@ -332,5 +332,8 @@ $(document).ready(function() {
         }
       };
     stripeHandler = StripeCheckout.configure(stripeConfig);
-  });
+  }).fail(function(jqXHR, textStatus, errorThrown) {
+	alert(textStatus);
+	alert(errorThrown);
+	});
 });
