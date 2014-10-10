@@ -1,0 +1,71 @@
+---
+layout: newpledge
+title: MAYDAY.US - A Crowdfunded, Kickstarted SuperPAC to end all SuperPACs
+omit_title_suffix: true
+cssid: newpledge
+disable-pledge-sidebar: true
+hidePrimaryNav: true
+---
+<style type="text/css" media="screen">
+
+.progress-bar {
+  background-color: rgba(139,128,94,0.3);
+  height: 25px;
+  padding: 5px;
+  width: 350px;
+  margin: 50px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  text-align:left;
+}
+
+.progress-bar span {
+  display: inline-block;
+  height: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  transition: width .4s ease-in-out;
+  background-color: #cc3333;
+}
+
+.info{
+  overflow: hidden;
+}
+.jumbotron{background:transparent url(/images/campaigns/20141010-greg-orman.jpg) right center no-repeat !important}
+@media screen and (max-width: 1174px) {
+  .jumbotron{background-position: 80% -110px !important}
+}
+@media screen and (max-width: 992px) {
+  .jumbotron{background-position: 80% 0 !important; background-size: 120% !important;}
+}
+@media screen and (max-width: 850px) {
+  .jumbotron{background-position: 0 0  !important; background-size: initial !important}
+}
+</style>
+<div class="jumbotron">
+<div class="row">
+<div class="col-md-5">
+  <div id="pledgeBox" style="width:100%;margin-bottom:10px;max-width:450px">
+    <div class="info">
+      <h2>Help us hit $200k for Kansas</h2>
+      <br />
+      <p>If we can raise $200k by Monday at midnight, then we're going to Kansas! </p>
+      <div class="progress-bar">
+        <span style="width: 40%"></span>
+      </div>
+    </div>
+    {% include pledgeform-candidate-generic.html %}
+  </div>
+</div>
+<div class="col-md-7" style="">
+</div>
+</div>
+  <div id="mainrules" class="well rules">
+    {% include pledge-rules.html %}
+  </div>
+</div>
+
+
+
+{% include footer.html %}
+
