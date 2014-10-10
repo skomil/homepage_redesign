@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    {% unless !page.hidePrimaryNav %}
+    {% unless !page.hidePrimaryNav or !alternativemenu %}
     <div class="row navbar-primary" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,7 +47,6 @@
             <ul class="dropdown-menu" role="menu">
               <li><a href="/about">Team Bios</a></li>
               <li><a href="/your-donations">Donor Data</a></li>
-              <!--<li><a href="/about">Bios</a></li>-->
               <li><a href="/videos">Videos &amp; Media</a></li>
               <li><a href="/faq">FAQ</a></li>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
@@ -66,6 +65,7 @@
       </div>
     </div>
     {% endunless %}
+    {{alternativemenu}}
   </div>
   <div class="header-bg-1"></div>
   <div class="header-bg-2"></div>
