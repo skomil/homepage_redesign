@@ -9,23 +9,43 @@ hidePrimaryNav: true
 <style type="text/css" media="screen">
 
 .progress-bar {
-  background-color: rgba(139,128,94,0.3);
-  height: 25px;
+  background-color: rgba(200,200,200,0.3);
+  height: 40px;
   padding: 5px;
   width: 350px;
-  margin: 50px 0;
+  margin: 0 0 20px;
   border-radius: 5px;
   box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
   text-align:left;
 }
 
 .progress-bar span {
-  display: inline-block;
+  float:left;
   height: 100%;
+}
+
+.progress-bar .to-go{
+  font-size: 20px;
+  font-weight: 700;
+  color: #cc3333;
+  padding: 0;
+  width: 69%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+}
+
+.progress-bar span.bar {
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
   transition: width .4s ease-in-out;
   background-color: #cc3333;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
 }
 
 .info{
@@ -49,8 +69,10 @@ hidePrimaryNav: true
     <div class="info">
       <h2>Help us hit $200k for Kansas</h2>
       <br />
-      <p>If we can raise $200k by Monday at midnight, then we're going to Kansas! </p>
-
+      <p>If we can raise $200k by Monday at midnight, then we're going to Kansas!  So far we've raised $<span id="amountRaised"></span>. </p>
+      <div class="progress-bar">
+        <span class="bar"></span> <span class="to-go"></span>
+      </div>
     </div>
     {% include pledgeform-candidate-generic.html %}
   </div>
@@ -62,7 +84,23 @@ hidePrimaryNav: true
     {% include pledge-rules.html %}
   </div>
 </div>
-
+<script>
+  jQuery.getJSON('https://pledge.mayday.us/r/total', function(data) {
+    totalRaised = data.totalCents/100 + 956503.28;//start number is +500.
+    amountRaised = Math.round(8201213-totalRaised);
+    $('#amountRaised').text(addCommas(amountRaised))
+    amountNeeded = 200000 - amountRaised;
+    precentRaised = Math.round((amountRaised/200000)*100);
+    $('.progress-bar .bar').css('width',precentRaised+'%');
+    if(precentRaised > 50){
+      $('.progress-bar .bar').text('$' + addCommas(amountRaised) + ' so far!');
+    }else{
+      precentNeeded = 100-precentRaised;
+      $('.progress-bar .to-go').css('width',precentNeeded+'%');
+      $('.progress-bar .to-go').text('$' + addCommas(amountNeeded) + ' to go!');
+    }
+  });
+</script>
 
 
 {% include footer.html %}
