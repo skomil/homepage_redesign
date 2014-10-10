@@ -12,7 +12,7 @@ hidePrimaryNav: true
   background-color: rgba(200,200,200,0.3);
   height: 40px;
   padding: 5px;
-  width: 350px;
+  width: 100%;
   margin: 0 0 20px;
   border-radius: 5px;
   box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
@@ -85,9 +85,10 @@ hidePrimaryNav: true
   </div>
 </div>
 <script>
-  jQuery.getJSON('https://pledge.mayday.us/r/total', function(data) {
+$(document).ready(function(){
+  $.getJSON('https://pledge.mayday.us/r/total', function(data) {
     totalRaised = data.totalCents/100 + 956503.28;//start number is +500.
-    amountRaised = Math.round(8201213-totalRaised);
+    amountRaised = Math.round(totalRaised-8201213);
     $('#amountRaised').text(addCommas(amountRaised))
     amountNeeded = 200000 - amountRaised;
     precentRaised = Math.round((amountRaised/200000)*100);
@@ -100,6 +101,7 @@ hidePrimaryNav: true
       $('.progress-bar .to-go').text('$' + addCommas(amountNeeded) + ' to go!');
     }
   });
+});
 </script>
 
 
