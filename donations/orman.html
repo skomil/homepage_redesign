@@ -90,7 +90,7 @@ hidePrimaryNav: true
 <script>
 $(document).ready(function(){
   $.getJSON('https://pledge.mayday.us/r/total', function(data) {
-    totalRaised = data.totalCents/100 + 957103.28;
+    totalRaised = data.totalCents/100 + 957103.28+100000;
     amountRaised = Math.round(totalRaised-8201213);
     $('#amountRaised').text(addCommas(amountRaised))
     amountNeeded = 200000 - amountRaised;

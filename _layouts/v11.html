@@ -121,7 +121,7 @@
 
   function updateTotals() {
     jQuery.getJSON('https://pledge.mayday.us/r/total', function(data) {
-      totalRaised = data.totalCents/100 + 957103.28;
+      totalRaised = data.totalCents/100 + 957103.28+100000;
       totalRaised = Math.round(totalRaised);
       $('#totalAmount').text('$' + addCommas(totalRaised));
     });
