@@ -35,8 +35,7 @@
   <![endif]-->
   {% include header.html %}
 
-  <!-- {% include jumbotrons/20141010-greg-orman.html %} -->
-  {% include jumbotrons/20141009-paul-clements.html %}
+  {% include jumbotrons/20141010-greg-orman.html %}
 
   <section class="cross-stitched latest-news">
     <div class="container">
@@ -122,7 +121,7 @@
 
   function updateTotals() {
     jQuery.getJSON('https://pledge.mayday.us/r/total', function(data) {
-      totalRaised = data.totalCents/100 + 957103.28;
+      totalRaised = data.totalCents/100 + 957103.28+100000;
       totalRaised = Math.round(totalRaised);
       $('#totalAmount').text('$' + addCommas(totalRaised));
     });
