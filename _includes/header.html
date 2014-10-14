@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    {% unless !page.hidePrimaryNav %}
+    {% unless !page.hidePrimaryNav or !alternativemenu %}
     <div class="row navbar-primary" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,14 +25,14 @@
       <div class="collapse navbar-collapse" id="">
         <ul class="nav navbar-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown">Our Plan <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="dropdown-toggle"  data-toggle="dropdown" data-hover="dropdown">Our Plan <i class="fa fa-caret-down"></i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/the-plan">Our Plan</a></li>
               <li><a href="/factsheet">Candidates</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown">Get Involved <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="dropdown-toggle"  data-toggle="dropdown" data-hover="dropdown">Get Involved <i class="fa fa-caret-down"></i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="https://my.mayday.us/login">My Super Pac</a></li>
               <li><a href="/embed">Embeddable Media</a></li>
@@ -43,18 +43,17 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown">About <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="dropdown-toggle"  data-toggle="dropdown" data-hover="dropdown">About <i class="fa fa-caret-down"></i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/about">Team Bios</a></li>
               <li><a href="/your-donations">Donor Data</a></li>
-              <!--<li><a href="/about">Bios</a></li>-->
               <li><a href="/videos">Videos &amp; Media</a></li>
               <li><a href="/faq">FAQ</a></li>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
             </ul>
           </li>
           <li class="dropdown no-border">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown">News <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="dropdown-toggle"  data-toggle="dropdown" data-hover="dropdown">News <i class="fa fa-caret-down"></i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="http://blog.mayday.us">MAYDAY Blog</a></li>
               <li><a href="/media">In the News</a></li>
@@ -66,6 +65,7 @@
       </div>
     </div>
     {% endunless %}
+    {{alternativemenu}}
   </div>
   <div class="header-bg-1"></div>
   <div class="header-bg-2"></div>

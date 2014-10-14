@@ -1,0 +1,135 @@
+<style type="text/css" media="screen">
+  .jumbotron-wrap{background:#eaebe5 url('/images/hero/20141010-greg-orman-2.jpg') no-repeat 10% center;padding-top: 70px;}
+  .jumbotron{position:relative;}
+    /*.jumbotron > a.ir{background:transparent url('/images/hero/youtube.png') no-repeat center center;}*/
+    .jumbotron .jumbotron-content{background: rgba(255,255,255,0.8);padding-top: 20px;}
+    .jumbotron a.ir.link-cover{display:block; width:100%; min-height:290px; position:absolute;top:0;bottom:0;z-index:100;width:54%;}
+    /*.jumbotron a.ir.link-cover:hover{background:transparent url('/images/hero/youtube-hover.png') no-repeat 80% 270px;}*/
+  .jumbotron-bottom {}
+    .star-image{margin-top:10px; margin-right:10px; float:left}
+    .jumbotron-bottom p{text-align:center;font-size:15px; font-style:normal; font-family:'Merriweather', Georgia, 'Times New Roman', Times, serif }
+    .jumbotron-bottom .donor-stats > div{text-align:center; padding-top:9px; font-family:'Roboto', sans-serif}
+    .jumbotron-bottom h5{font-weight:400}
+    .jumbotron-bottom h5 .text-red{font-weight:500; font-size:30px}
+    .jumbotron .btn{
+      float: right;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+.progress-bar {
+  background-color: rgba(200,200,200,0.3);
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+  margin: 0 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  text-align:left;
+}
+
+.progress-bar span {
+  float:left;
+  height: 100%;
+}
+
+.progress-bar .to-go{
+  font-size: 20px;
+  font-weight: 700;
+  color: #cc3333;
+  padding: 0;
+  width: 69%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+}
+
+.progress-bar span.bar {
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  transition: width .4s ease-in-out;
+  background-color: #cc3333;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+}
+
+@media screen and (min-width: 1570px) {
+  /*.jumbotron-wrap{background-position:30% 50px}*/
+}
+@media screen and (min-width: 1400px) and (max-width: 1569px) {
+  /*.jumbotron-wrap{background-position:25% 50px}*/
+}
+@media screen and (max-width: 1174px) {
+  .jumbotron-wrap{background-position:20% center}
+}
+@media screen and (max-width: 992px) {
+  .jumbotron .container{background: rgba(255,255,255,0.9); }
+  .jumbotron .jumbotron-content{width:100%; background:transparent;}
+  .jumbotron > a.ir.link-cover{display: none;}
+}
+
+</style>
+
+<div class="jumbotron-wrap" style="">
+  <section class="jumbotron">
+    <a href="/donations/orman/" title="Watch the Video!" class="ir link-cover">&nbsp;</a>
+    <div class="container">
+      <div class="col-md-offset-7 col-md-5 jumbotron-content">
+        <h2>Help us hit $200k for Kansas</h2>
+        <p>If we can raise $200k for Independent reformer Greg Orman by Monday at midnight, then we're going to Kansas! So far we've raised $<span id="amountRaised"></span>.</p>
+        <div class="progress-bar">
+          <span class="bar"></span> <span class="to-go"></span>
+        </div>
+        <a href="/donations/orman/" class="btn">Donate Now!</a>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="jumbotron-bottom">
+  <hr/>
+  <div class="container" style="padding-top:0;padding-bottom:0">
+    <div class="row">
+      <div class="col-md-7">
+        <p><strong><a href="/the-plan" title="Learn More">MAYDAY.US</a></strong> is a crowd-funded SuperPAC to end all SuperPACs... including this one. Help us reduce the influence of money in politics by electing a Congress committed to fundamental reform by 2016. <a href="/the-plan" title="Learn More">Let's win our democracy back!</a> </p>
+      </div>
+
+      <div class="col-md-5 donor-stats">
+        <div class="col-md-7">
+          <span class="ir star-image">&nbsp;</span>
+          <h5><span class="text-red" id="totalAmount">$7,934,519</span><br /> Raised</h5>
+        </div>
+        <div class="col-md-5">
+          <span class="ir star-image">&nbsp;</span>
+          <h5><span class="text-red" id="numPledges">61,621</span><br /> Donors</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+</div>
+
+{% capture footer_content %}
+<script type="text/javascript">
+$(document).ready(function(){
+  $.getJSON('https://pledge.mayday.us/r/total', function(data) {
+    totalRaised = data.totalCents/100 + 957103.28+100000;
+    amountRaised = Math.round(totalRaised-8201213);
+    $('#amountRaised').text(addCommas(amountRaised))
+    amountNeeded = 200000 - amountRaised;
+    precentRaised = Math.round((amountRaised/200000)*100);
+    $('.progress-bar .bar').css('width',precentRaised+'%');
+    if(precentRaised > 50){
+      $('.progress-bar .bar').text('$' + addCommas(amountRaised) + ' so far!');
+    }else{
+      precentNeeded = 100-precentRaised;
+      $('.progress-bar .to-go').css('width',precentNeeded+'%');
+      $('.progress-bar .to-go').text('$' + addCommas(amountNeeded) + ' to go!');
+    }
+  });
+});
+</script>
+{% endcapture %}

@@ -1,0 +1,92 @@
+---
+layout: newpledge
+title: MAYDAY.US - A Crowdfunded, Kickstarted SuperPAC to end all SuperPACs
+omit_title_suffix: true
+cssid: newpledge
+disable-pledge-sidebar: true
+hidePrimaryNav: true
+---
+<style type="text/css" media="screen">
+
+.progress-bar {
+  background-color: rgba(200,200,200,0.3);
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+  margin: 0 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  text-align:left;
+}
+
+.progress-bar span {
+  float:left;
+  height: 100%;
+}
+
+.progress-bar .to-go{
+  font-size: 20px;
+  font-weight: 700;
+  color: #cc3333;
+  padding: 0;
+  width: 69%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+}
+
+.progress-bar span.bar {
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  transition: width .4s ease-in-out;
+  background-color: #cc3333;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+}
+
+.info{
+  overflow: hidden;
+}
+.jumbotron{background:transparent url(/images/campaigns/20141010-greg-orman.jpg) right center no-repeat !important}
+@media screen and (max-width: 1174px) {
+  .jumbotron{background-position: 80% -110px !important}
+}
+@media screen and (max-width: 992px) {
+  .jumbotron{background-position: 80% 0 !important; background-size: 120% !important;}
+}
+@media screen and (max-width: 850px) {
+  .jumbotron{background-position: 0 0  !important; background-size: initial !important}
+}
+@media screen and (max-width: 600px) {
+  .jumbotron{padding-top: 70px !important}
+}
+</style>
+<div class="jumbotron">
+<div class="row">
+<div class="col-md-5">
+  <div id="pledgeBox" style="width:100%;margin-bottom:10px;max-width:450px">
+    <div class="info">
+      <h2>We Did It!</h2>
+      <br />
+      <p>Thanks to our incredible supporters, we raised over $200k in one weekend. Our team is huddling on next steps for Independent reformer Greg Orman in Kansas. Stay tuned!</p>
+      <div class="progress-bar">
+        <span class="bar" style="width:100%">We Raised $200k!</span>
+      </div>
+    </div>
+    {% include pledgeform-candidate-generic.html %}
+  </div>
+</div>
+<div class="col-md-7" style="">
+</div>
+</div>
+  <div id="mainrules" class="well rules">
+    {% include pledge-rules.html %}
+  </div>
+</div>
+
+{% include footer.html %}
+

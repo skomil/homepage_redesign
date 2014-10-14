@@ -1,19 +1,15 @@
-{% include header.html %}
-  <!--Container for Head-->
-<div class="rally full-width">
-<div class="container">
-	 <div class="row">
-          <div class="subpage-content {% unless page.hideSidebar %}col-md-8{% else %}col-md-12{% endunless %}">{{content | markdownify}}</div>
-          {% unless page.hideSidebar %}<div class="sidebar col-md-4">{% include sidebar.html %}</div>{% endunless %}
+{% include head.html %}
+  <body id="{{page.cssid}}" class="default-body">
+    <script type='text/javascript' src='https://ad.doubleclick.net/N6673/adj/resn.pixel;alias=mpac0814a0;sz=1x1;ord=1?'></script>
+  {% include header.html %}
+  <div class="rally full-width">
+    <div class="container">
+      <div class="row">
+        <div class="subpage-content {% unless page.hideSidebar %}col-md-8{% else %}col-md-12{% endunless %}">{{content | markdownify}}</div>
+        {% unless page.hideSidebar %}<div class="sidebar col-md-4">{% include sidebar.html %}</div>{% endunless %}
       </div>
+    </div>
+  </div>
 
-</div>
-</div>
-
-{% include footer.html %}
-  <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+  {% include footer.html %}
+</body>
