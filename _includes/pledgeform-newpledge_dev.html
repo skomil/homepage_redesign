@@ -3,9 +3,9 @@
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <script src="https:{% if page.pledge_url %}{{ page.pledge_url }}{% else %}//pledge.mayday.us{% endif %}/static/pledge.js"></script>
 {% if page.disable-pledge-sidebar == null %}
-<link rel="stylesheet" href="{{ site.baseurl }}/css/landing-newpledge.css?3" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/landing-newpledge.css?4" />
 {% else %}
-<link rel="stylesheet" href="{{ site.baseurl }}/css/newpledge.css?3" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/newpledge.css?4" />
 {% endif %}
 
 <script>
@@ -86,7 +86,7 @@ limitations under the License.
 {% endif %}
 
   	<div class="stepContainer">
-		<h3>Donate In Two Minutes Or Less</h3>
+		<h3>{% if page.pledgeTitle %}{{page.pledgeTitle}}{% else %}Donate In Two Minutes Or Less{% endif %}</h3>
 		<ul class="steps">
 			<li id="step-1" class="step active">Amount<span>1</span></li>
 			<li id="step-2" class="step">Info<span>2</span></li>
@@ -96,10 +96,10 @@ limitations under the License.
 
 	<div class="step-1-container">
     <!--[if IE 8]>
-    <div class="form-group col-sm-12">It looks like you're using an older IE browser! <a href="https://pledge.mayday.us/"> Follow this link </a> to use our simplified page! <a href="http://browsehappy.com/">Alternatively, follow this link</a> to upgrade and make a donation!</div>
+    <div class="form-group col-sm-12">It looks like you're using an older IE browser! <a href="http://browsehappy.com/">Please follow this link to upgrade and make a donation!</a></div>
     <![endif]-->
     <!--[if IE 9]>
-    <div class="form-group col-sm-12">It looks like you're using an older IE browser! <a href="https://pledge.mayday.us/"> Follow this link </a> to use our simplified page! <a href="http://browsehappy.com/">Alternatively, follow this link</a> to upgrade and make a donation!</div>
+    <div class="form-group col-sm-12">It looks like you're using an older IE browser! <a href="http://browsehappy.com/">Please follow this link to upgrade and make a donation!</a></div>
     <![endif]-->
 		<div class="ammount-button" onclick="step2(10);">$10</div>
 		<div class="ammount-button" onclick="step2(25);">$25</div>
@@ -119,13 +119,12 @@ limitations under the License.
 		<HR />
 		<div style="margin:10px 0px;"><strong>Or:</strong><a href="https://mayday.us/bitcoin/"><img width="150px" src="/images/donate-with-bitcoin.png"></a></div>
 {% endif %}
-	<input type="checkbox" id="recurring"> <label for="recurring"> Make your donation recur weekly until the election!</label>
+	<input type="checkbox" id="recurring"><label for="recurring"> Make my donation recur on a weekly basis until the election!</label>
 	</div>
 
 	<div class="step-2-container">
 		  <form id="pledgeForm" role="form" method="POST" onsubmit="step3();" action="javascript:;">
-          <input type="hidden" name="targeting_input" id="targeting_input" value="Whatever Helps">
-          <input type="hidden" name="target" id="target" value="Whatever Helps">
+
 {% if page.only-bitcoin %}
           <div class="form-group col-sm-6"><label class="control-label">First Name</label><input type="text" required placeholder="Tommy" class="form-control input-lg" id="first_name_input" /></div>
           <div class="form-group col-sm-6"><label class="control-label">Last Name</label><input type="text" required placeholder="Brown" class="form-control input-lg" id="last_name_input" /></div>
@@ -206,6 +205,14 @@ limitations under the License.
 	        <div class="form-group col-sm-6"><label class="control-label">Phone Number <span class="label label-default">Optional</span></label><input type="tel" placeholder="(212) 867-5309" class="form-control input-lg" id="phone_input" /></div>
 	        <div class="form-group col-sm-6"><label class="control-label">Occupation</label><input type="text" required placeholder="Gardener, Railroad Worker, etc"  class="form-control input-lg" id="occupation_input"/></div>
 	        <div class="form-group col-sm-6"><label class="control-label">Employer</label><input type="text" required placeholder="Nintendo, UPS, Self, etc" class="form-control input-lg" id="employer_input" /></div>
+	        <div class="form-group col-sm-6">
+	          <label class="control-label">Who to Fund?</label>
+	          <select  class="form-control input-lg" id="targeting_input">
+	            <option>Whatever Helps</option>
+	            <option>Democrats Only</option>
+	            <option>Republicans Only</option>
+	          </select>
+	        </div>
 	        {% if page.includeSurvey %}
 	          <div class="form-group col-sm-6">
 	            <label class="control-label">What tactics to use?</label>
