@@ -23,7 +23,7 @@ In addition, today Mayday PAC announces three more of the eight total candidates
 
 With this announcement, Mayday PAC continues to meet its commitment to work with candidates who support reform on both sides of the aisle. Mayday PAC will be communicating directly with voters in these districts with specific messages on political cronyism and reform. Mayday PAC will be working to make changing the way elections are funded a fundamental issue in each of these races.
 
-A fact sheet and additional information on each candidate’s record on reform can be found [here](https://mayday.us/2014/08/11/CandidateAnnouncement/#fact-sheet-on-mayday-pac-2014-targets).
+A fact sheet and additional information on each candidate’s record on reform can be found [here](https://mayday.us/factsheet).
 
 Today Mayday PAC also announces the placement of its first radio ads in New Hampshire, in support of Senate candidate Jim Rubens. These ads make it clear to voters that the only way to reclaim our democracy and get government working again is to reduce money in politics. These ads can be found [here](https://mayday.us/rubens/#radioAds).
 
