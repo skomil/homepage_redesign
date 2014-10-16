@@ -282,12 +282,13 @@ input.error{border: 1px solid #d53a38;background: rgba(213,58,56,0.1);}
 
 /* v9green
 ======================================================================== */
-a {color: #15405e;outline: none !important;}
+/*a {color: #15405e;outline: none !important;}*/
 a:hover {text-decoration: none;}
 p {font-size: 18px;margin: 0 0 1.2em;}
 h2 {font-size: 41px;color: #313945;margin: 0 0 .5em;}
 h3{color: #313945;}
 .row-centered {text-align:center;}
+.clear-modern{overflow:hidden;}
 
 .button {font: 400 22px/50px 'Questrial', Arial, sans-serif;text-transform: uppercase;text-decoration: none;color: #fff;letter-spacing: 1px;display: inline-block;background: #c33 no-repeat 100% 50%;height: 50px;padding: 0 30px;border-radius: 30px;overflow: hidden; -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .button:hover {background-color: #b01a1a;}
