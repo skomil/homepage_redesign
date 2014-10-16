@@ -48,6 +48,17 @@
         <!-- Doing the following manually until have time to write JS -->
         <article class="col-md-4">
           <div>
+            <h5 class="blog-image ir" style="background-image:url('/images/bio-photos/lawrence-lessig-358x200.jpg');"></h5>
+            <div class="article-details">
+              <h5>2014-10-16</h5>
+              <h4>Calling it closed on the match</h4>
+              <p>Since July 4th, I’ve been working as hard as I possibly can to rally the funds to match the money that 50,000 contributors gave.</p>
+              <p><a class="btn btn-cta" href="http://blog.mayday.us/post/100111478235/calling-it-closed-on-the-match" role="button">Read More</a></p>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4">
+          <div>
             <h5 class="blog-image ir" style="background-image:url('/images/blog/20141009-contest-blog-2.jpg');"></h5>
             <div class="article-details">
               <h5>2014-10-06</h5>
@@ -68,7 +79,7 @@
             </div>
           </div>
         </article>
-        <article class="col-md-4">
+        <!-- <article class="col-md-4">
           <div>
             <h5 class="blog-image ir" style="background-image:url('/images/blog/gallego-victory.jpg');"></h5>
             <div class="article-details">
@@ -76,17 +87,6 @@
               <h4>Gallego Victory</h4>
               <p> Our first Mayday reform candidate, Ruben Gallego, declared victory last night in Arizona's 7th Congressional District.</p>
               <p><a class="btn btn-cta" href="http://blog.mayday.us/post/98260003100/" role="button">View details</a></p>
-            </div>
-          </div>
-        </article>
-<!--         <article class="col-md-4">
-          <div>
-            <h5 class="blog-image ir" style="background-image:url('/images/blog/labCubes.jpg');">Heading</h5>
-            <div class="article-details">
-              <h5>2014-08-26</h5>
-              <h4>Launch of Mayday Labs</h4>
-              <p> MAYDAY.US has broken new ground in online organizing.  To build on this momentum, we are announcing the creation of Mayday Labs.&nbsp;&nbsp;<a href="http://blog.mayday.us/post/98260002390/" title="Read More.">Read More</a></p>
-              <p><a class="btn btn-cta" href="http://blog.mayday.us/post/98260002390/" role="button">View details</a></p>
             </div>
           </div>
         </article> -->
@@ -121,14 +121,14 @@
 
   function updateTotals() {
     jQuery.getJSON('https://pledge.mayday.us/r/total', function(data) {
-      totalRaised = data.totalCents/100 + 957103.28+100000;
+      totalRaised = data.totalCents/100 + (1408240.42+2275000);//+offline contributions
       totalRaised = Math.round(totalRaised);
       $('#totalAmount').text('$' + addCommas(totalRaised));
     });
 
     jQuery.getJSON('https://pledge.mayday.us/r/num_pledges',
       function(data) {
-      $('#numPledges').text(addCommas(data.count+5360));
+      $('#numPledges').text(addCommas(data.count+4917+6));//+offline contributions
     });
   }
 
