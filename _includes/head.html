@@ -7,16 +7,18 @@
   <link rel="shortcut icon" href="//mayday.us/favicon.ico" />
   {% if page.noIndex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 
-  {% unless meta_content or meta_content != '' %}
+  {% assign meta_content_size = meta_content | size %}
+  {% if meta_content_size < 2 %}
     <title>{{ page.title }}</title>
     <meta property="og:url" content="https://mayday.us{{ page.url }}"/>
     <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}
   https://mayday.us/images/ProfilePic.jpg{% endif %}"/>
     <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}MAYDAY: Democracy needs an upgrade. Act now.{% endif %}"/>
     <meta property="og:description" content="{% if page.og_description %}{{ page.og_description }}{% else %}Money has corrupted politics. We’re kickstarting a political experiment big enough to win a Congress committed to fundamental reform -- Join us!{% endif %}"/>
+    {% if page.twitter_description %}<meta content="{{twitter_description}}" name="twitter:description" />{% endif %}
   {% else %}
     {{ meta_content }}
-  {% endunless %}
+  {% endif %}
 
   {% if page.twitter_image %}
     <meta property="twitter:card" content="photo" />
