@@ -72,7 +72,7 @@
           <div>
             <a class="blog-image" href="http://blog.mayday.us/post/98805891740/i-just-joined-the-mayday-board"><img src="/images/blog/2014-09-30-zephyr-teachout2.jpg" /></a>
             <div class="article-details">
-              <h5>2014-0-30</h5>
+              <h5>2014-09-30</h5>
               <h4>Zephyr Teachout joins our board</h4>
               <p>We're thrilled to announce that Zephyr Teachout – anti-corruption champion and scholar – is joining our Board of Directors.</p>
               <p><a class="btn btn-cta" href="http://blog.mayday.us/post/98805891740/i-just-joined-the-mayday-board" role="button">View details</a></p>
@@ -110,7 +110,7 @@
 
   function updateTotals() {
     jQuery.getJSON('https://pledge.mayday.us/r/total', function(data) {
-      totalRaised = data.totalCents/100 + (1408240.42+2275000);//+offline contributions
+      totalRaised = data.totalCents/100 + (1408240.42+1775000);//+offline contributions
       totalRaised = Math.round(totalRaised);
       $('#totalAmount').text('$' + addCommas(totalRaised));
     });
