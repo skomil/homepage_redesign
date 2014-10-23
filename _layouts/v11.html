@@ -98,12 +98,12 @@
     jQuery.getJSON('https://pledge.mayday.us/r/total', function(data) {
       totalRaised = data.totalCents/100 + (1408240.42+1775000);//+offline contributions
       totalRaised = Math.round(totalRaised);
-      $('#totalAmount').text('$' + addCommas(totalRaised));
+      $('#total-donated').text('$' + addCommas(totalRaised));
     });
 
     jQuery.getJSON('https://pledge.mayday.us/r/num_pledges',
       function(data) {
-      $('#numPledges').text(addCommas(data.count+4917+6));//+offline contributions
+      $('#total-donors').text(addCommas(data.count+4917+6));//+offline contributions
     });
   }
 
