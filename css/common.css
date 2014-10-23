@@ -88,6 +88,8 @@ footer {color: #999;background-color:black;}
   .safeharbor{font: normal 1em/1.4 'Merriweather', Georgia, "Times New Roman", Times, serif;display: inline-block;color: #aaa;text-align: center;font-size: 16px;padding: 10px 10px 0 10px;border: 2px solid #aaa;font-variant: small-caps;margin-bottom:10px;}
 /* END FOOTER SECTION */
 
+.subpage-content form .btn.btn-primary{background-color:#15405e;font-size:20px;font-family: 'Roboto',sans}
+
 .ir/* Image replacement: header social share, footer FB/Twitter */ {background-color: transparent;border: 0;overflow: hidden;text-indent: -9999px}
 .text-red {color: #cc3333 !important;}
 .float-right{float:right !important;}
@@ -166,7 +168,7 @@ footer {color: #999;background-color:black;}
 
 /*Subpages*/
 
-#embed .subpage-content {text-align:center;font-size:125%;}
+#embed .subpage-content {font-size:125%;}
 #embed .subpage-content pre {text-align:left;}
 #embed .subpage-content img {border: 1px solid black;padding: 1px;}
 #about .subpage-content img {float:left;width:150px;border:solid #ccc 2px;padding: 2px;margin: 5px 15px 15px 0;}
