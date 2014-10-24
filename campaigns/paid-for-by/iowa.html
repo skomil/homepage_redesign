@@ -35,14 +35,12 @@ Paid for By
 <meta property="twitter:image:src"   content="https://mayday.us/images/ProfilePic.jpg" />
 <meta property="twitter:site"        content='@mayday' />
 {% endcapture %}
+
 {% capture content %}
-
-
-
 <style type="text/css" media="screen">
-.video-listing{margin:0;padding:0 0 20px;overflow:hidden;}
-  .video-listing li{float: left;text-align: right;font-weight: bold;margin-left:4px;display:block;}
-    .video-listing li:first-child{margin-left:0;}
+.video-listing{margin:0;padding:0;overflow:hidden;}
+  .video-listing li{float: left;text-align: right;font-weight: bold;margin-right:4px;margin-bottom:20px;display:block;}
+    .video-listing li:last-child{margin-right:0;}
       .video-listing li a{display:inline-block;width: 120px;text-align:center;background:#eee;border-radius:3px;padding:5px 0;font-size:16px;}
       .video-listing li a:hover{background:#ddd;}
       .video-listing li.active a{font-weight:700;background:#ddd;}
@@ -70,8 +68,10 @@ Paid for By
   </div>
   <div class="row">
     <div class="col-md-7">
-      <iframe width="640" height="360" src="//www.youtube.com/embed/kAQJIdLh39o" frameborder="0" allowfullscreen></iframe>
-      <p style="margin:0">Seinfeld's Jason Alexander wants you to help us make "paid for by" politicians a thing of the past.</p>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" allowfullscreen src="//www.youtube.com/embed/kAQJIdLh39o"></iframe>
+        <p style="margin:0">Seinfeld's Jason Alexander wants you to help us make "paid for by" politicians a thing of the past.</p>
+      </div>
     </div>
     <div class="col-md-5">
       <h2>Get out the vote in Iowa!</h2>
