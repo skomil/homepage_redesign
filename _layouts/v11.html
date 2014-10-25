@@ -9,8 +9,31 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   {% include header.html %}
+  <div class="carousel-wrap">
+    <div id="carousel-jumbotron" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-jumbotron" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-jumbotron" data-slide-to="1"></li>
+        <!-- <li data-target="#carousel-jumbotron" data-slide-to="2"></li> -->
+      </ol>
 
-  {% include jumbotrons/20141017-kansas-calls.html%}
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item kansas-calls active">{% include jumbotrons/20141017-kansas-calls.html %}</div>
+        <div class="item winners">{% include jumbotrons/20141025-mayday-in-30-winners.html %}</div>
+
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-jumbotron" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-jumbotron" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+{% include jumbotrons/jumbotron-bottom.html %}
 
   <section class="cross-stitched latest-news">
     <div class="container">
@@ -106,6 +129,45 @@
       $('#total-donors').text(addCommas(data.count+4917+6));//+offline contributions
     });
   }
+  // Normalize Carouselw5 Heights - pass in Bootstrap Carousel items.
+  $.fn.carouselHeights = function() {
+
+      var items = $(this),
+          heights = [],
+          tallest;
+
+      var normalizeHeights = function() {
+          items.each(function() {
+              heights.push($(this).height());
+          });
+          tallest = Math.max.apply(null, heights);
+          items.each(function() {
+            console.log('tallest:',tallest)
+              $(this).css('min-height',tallest + 'px');
+          });
+      };
+
+      normalizeHeights();
+
+      $(window).on('resize orientationchange', function () {
+          tallest = 0;
+          heights.length = 0;
+
+          items.each(function() {
+              $(this).css('min-height','0');
+          });
+          normalizeHeights();
+      });
+
+  };
+
+  $('input').focus(function(){
+     $("#carousel-jumbotron").carousel('pause');
+  }).blur(function() {
+     $("#carousel-jumbotron").carousel('cycle');
+  });
+
+  // });
 
     $(document).ready(function(){
       $(".jumbotron-content form").validate({
@@ -119,6 +181,11 @@
           },
         });
       updateTotals();
+
+      $('#carousel-jumbotron').carousel({
+        interval: 20000
+      });
+      $('#carousel-jumbotron .item').carouselHeights();
     });
   </script>
 
